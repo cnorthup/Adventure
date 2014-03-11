@@ -21,6 +21,8 @@
 		56AAA47818CF806000B25EC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AAA45A18CF806000B25EC2 /* UIKit.framework */; };
 		56AAA48018CF806000B25EC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56AAA47E18CF806000B25EC2 /* InfoPlist.strings */; };
 		56AAA48218CF806000B25EC2 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AAA48118CF806000B25EC2 /* AdventureTests.m */; };
+		56AAA48C18CF829D00B25EC2 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AAA48B18CF829D00B25EC2 /* CheckMate.framework */; };
+		56AAA49218CF984A00B25EC2 /* OutComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AAA49118CF984900B25EC2 /* OutComeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		56AAA47D18CF806000B25EC2 /* AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		56AAA47F18CF806000B25EC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56AAA48118CF806000B25EC2 /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
+		56AAA48B18CF829D00B25EC2 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+		56AAA49018CF984900B25EC2 /* OutComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutComeViewController.h; sourceTree = "<group>"; };
+		56AAA49118CF984900B25EC2 /* OutComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutComeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AAA48C18CF829D00B25EC2 /* CheckMate.framework in Frameworks */,
 				56AAA45918CF806000B25EC2 /* CoreGraphics.framework in Frameworks */,
 				56AAA45B18CF806000B25EC2 /* UIKit.framework in Frameworks */,
 				56AAA45718CF806000B25EC2 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		56AAA45518CF806000B25EC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56AAA48B18CF829D00B25EC2 /* CheckMate.framework */,
 				56AAA45618CF806000B25EC2 /* Foundation.framework */,
 				56AAA45818CF806000B25EC2 /* CoreGraphics.framework */,
 				56AAA45A18CF806000B25EC2 /* UIKit.framework */,
@@ -117,6 +124,8 @@
 				56AAA46818CF806000B25EC2 /* Main.storyboard */,
 				56AAA46B18CF806000B25EC2 /* ViewController.h */,
 				56AAA46C18CF806000B25EC2 /* ViewController.m */,
+				56AAA49018CF984900B25EC2 /* OutComeViewController.h */,
+				56AAA49118CF984900B25EC2 /* OutComeViewController.m */,
 				56AAA46E18CF806000B25EC2 /* Images.xcassets */,
 				56AAA45D18CF806000B25EC2 /* Supporting Files */,
 			);
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56AAA46D18CF806000B25EC2 /* ViewController.m in Sources */,
+				56AAA49218CF984A00B25EC2 /* OutComeViewController.m in Sources */,
 				56AAA46718CF806000B25EC2 /* AppDelegate.m in Sources */,
 				56AAA46318CF806000B25EC2 /* main.m in Sources */,
 			);
@@ -378,6 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/charles/MobileMakers/Adventure,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -391,6 +405,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/charles/MobileMakers/Adventure,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -460,6 +478,7 @@
 				56AAA48718CF806000B25EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56AAA48818CF806000B25EC2 /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +487,7 @@
 				56AAA48A18CF806000B25EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
