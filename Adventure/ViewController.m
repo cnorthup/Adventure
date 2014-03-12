@@ -15,22 +15,34 @@
 @property (weak, nonatomic) IBOutlet UIImageView *startScreen;
 
 @property (weak, nonatomic) IBOutlet UILabel *result;
+@property (weak, nonatomic) IBOutlet UITextView *characterNameBegin;
+
+
 
 
 @end
 
 @implementation ViewController
 
+- (IBAction)setCharacterName:(UITextField *)sender {
+    self.editing = NO;
+    NSString *name = sender.text;
+    NSString *setup = [NSString stringWithFormat:@"%@ wakes up in the Mobile Maker space surrounded by empty pizza boxes.", name];
+    self.characterNameBegin.text = setup;
+}
+
+
+
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     OutComeViewController *vc = segue.destinationViewController;
     NSString *title = @"";
     if (sender == self.ateButton)
     {
         title = _ateButton.titleLabel.text;
         vc.title = title;
-//        _result.text = @"";
         
     }
     if (sender == self.cleanButton)
@@ -44,7 +56,10 @@
 - (IBAction)unwindDestinationViewController:(UIStoryboardSegue*)segue
 {
     OutComeViewController *finalVC = segue.sourceViewController;
+    self.result.backgroundColor = [UIColor blackColor];
+    self.result.textColor = [UIColor greenColor];
     self.result.text = [(UITextView *)[finalVC.view viewWithTag:123] text];
 }
+
 
 @end

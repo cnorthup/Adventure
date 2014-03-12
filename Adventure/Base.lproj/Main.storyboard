@@ -48,17 +48,27 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="xJ4-Q7-xx7">
-                                <rect key="frame" x="90" y="124" width="210" height="78"/>
+                                <rect key="frame" x="40" y="259" width="210" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ryan" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4Q-xq-Hwb">
+                                <rect key="frame" x="175" y="138" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="setCharacterName:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="HzL-qG-PKt"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Your Adventure" id="N5I-zU-mhD"/>
                     <connections>
                         <outlet property="ateButton" destination="NFP-6m-Vh5" id="6pP-4c-EIf"/>
+                        <outlet property="characterNameBegin" destination="0ls-0t-sm6" id="tiC-og-VDd"/>
                         <outlet property="cleanButton" destination="jAR-PU-uZI" id="0Be-RS-EoV"/>
                         <outlet property="result" destination="xJ4-Q7-xx7" id="pZW-8T-DDd"/>
                         <outlet property="startScreen" destination="aNj-C7-8sN" id="BjN-cY-wKZ"/>

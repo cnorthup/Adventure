@@ -15,9 +15,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *truthButton;
 
 
+
 @end
 
 @implementation OutComeViewController
+
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
